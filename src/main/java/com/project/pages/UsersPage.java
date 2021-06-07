@@ -52,6 +52,10 @@ public class UsersPage extends PageUtility{
 	@FindBy(xpath="//table[@id='users_table']//tbody//td"))
 	List<WebElement> table;
 	
+	@FindBy(xpath="//li[contains(@class,'treeview active')]")
+	WebElement activeUsers;
+	
+	
 	
 	public void addUser()
 	{
@@ -149,6 +153,11 @@ public class UsersPage extends PageUtility{
 	}
 
 	return tablerow;
+	}
+	
+	public void getUsersstatus()
+	{
+		
 	}
 
 }
