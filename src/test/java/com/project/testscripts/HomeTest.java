@@ -15,16 +15,30 @@ public class HomeTest extends Base{
 	LogoutPage logout;
 	UserManagementPage userManagement;
 	
-	//@Test
-	public void verifyHomepageloaded() throws InterruptedException {
-		LoginPage login = new LoginPage(driver);
-		LogoutPage logout = new LogoutPage(driver);
+	@Test
+	public void verifyHomePageTitle()
+	{
+		login=new LoginPage(driver);
 		login.enterUsername("admin");
 		login.enterPassword("123456");
 		login.clickonRemember();
 		home=login.clickonLoginButton();
 		home.clickonApplicationTour();
-		home.clickonusermanagement();
+		String actualHomePageTitle=driver.getTitle();
+		String expectedHomePageTilte="Home - Demo Company";
+		Assert.assertEquals(actualHomePageTitle, expectedHomePageTilte,"Title Mismatch!!");
+		
+	}
+	@Test(enabled=true)
+	public void verifyHomepageloaded() throws InterruptedException {
+		login = new LoginPage(driver);
+		//LogoutPage logout = new LogoutPage(driver);
+		login.enterUsername("admin");
+		login.enterPassword("123456");
+		login.clickonRemember();
+		home=login.clickonLoginButton();
+		home.clickonApplicationTour();
+		//home.clickonusermanagement();
 		boolean result = home.getHomeMenuStatus();
 		Assert.assertTrue(result,"Home Page not expanded");
 		

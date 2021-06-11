@@ -14,16 +14,16 @@ public class LoginTest extends Base{
 	HomePage home;
 	LogoutPage logout;
 	
-	//@Test
+	@Test
 	public void verifyLoginPageTitle()
 	{
-		LoginPage login = new LoginPage(driver);
+		login = new LoginPage(driver);
 		String actualPageTitle = login.getLoginPageTitle();
 		String expectedPageTitle = "Login - Demo POS";
 		Assert.assertEquals(actualPageTitle,expectedPageTitle, "Invalid login page title");
 	}
 	
-	//@Test
+	@Test
 	public void verifyLoginPageLoadedorNot() {
 		LoginPage login = new LoginPage(driver);
 		boolean result = login.isLoginPageLoaded();
@@ -31,19 +31,22 @@ public class LoginTest extends Base{
 
 	}
 	
-	//@Test
+	@Test
 	public void verifyValidLogin()
 	{
-		LoginPage login = new LoginPage(driver);
+		login = new LoginPage(driver);
 		login.enterUsername("admin");
 		login.enterPassword("123456");
 		login.clickonRemember();
 		home=login.clickonLoginButton();
 		home.clickonApplicationTour();
-		home.clickonUseracoount();
-		String actualUserID = home.getPageName();
-		String expectedUserID = "Demo Company";
-		Assert.assertEquals(actualUserID, expectedUserID,":User account page not loaded");
+		//
+		boolean result=home.isHomePageLoaded();
+		Assert.assertTrue(result, "Home Page not Loaded");
+		//String actualUserID = home.getPageName();
+		//String expectedUserID = "Demo Company";
+		//Assert.assertEquals(actualUserID, expectedUserID,":User account page not loaded");
+		home.clickonUseraccount();
 		logout.clickonLogoutButton();
 	}
 	

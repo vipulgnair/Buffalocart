@@ -57,5 +57,23 @@ public class RolesTest extends Base{
 		
 		
 	}
+	
+	@Test
+	public void verifysearch() throws InterruptedException
+	{
+		login=new LoginPage(driver);
+		login.enterUsername("admin");
+		login.enterPassword("123456");
+		home=login.clickonLoginButton();
+		home.clickonApplicationTour();
+		userManagement=home.clickonusermanagement();
+		userManagement.clickonUsersSubmenu("Roles");
+		RolesPage roles = new RolesPage(driver);
+		roles.searchfunction("cashier");
+		String actualresult= roles.isSearchElementPresent();
+		String expectedresult="cashier";
+		Assert.assertEquals(actualresult, expectedresult);
+		
+	}
 
 }

@@ -33,8 +33,10 @@ public class HomePage extends PageUtility {
 	@FindBy(xpath="//ul[@class='sidebar-menu']//a//span[@class='title']")
 	WebElement userManagement;
 	
-	
-	
+	public boolean isHomePageLoaded() {
+		sleep(3000);
+		return getElementDisplayedStatus(home);
+	}
 	
 	public String getPageName()
 	{
@@ -49,7 +51,7 @@ public class HomePage extends PageUtility {
 		
 	}
 	
-	public LogoutPage clickonUseracoount()
+	public LogoutPage clickonUseraccount()
 	{
 		clickOnElement(usernameDropdown);
 		return new LogoutPage(driver);

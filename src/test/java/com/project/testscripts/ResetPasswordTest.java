@@ -9,7 +9,7 @@ import com.project.pages.ResetPasswordPage;
 
 public class ResetPasswordTest extends Base{
 	ResetPasswordPage resetPassword;
-	//@Test
+	@Test
 	public void verifyResetPageLoadedorNot() {
 		LoginPage login = new LoginPage(driver);
 		resetPassword = login.clickonForgotPassword();
@@ -17,7 +17,7 @@ public class ResetPasswordTest extends Base{
 		Assert.assertTrue(result,"Reset Page not loaded");
 	}
 	
-	//@Test
+	@Test
 	public void verifyForgotPasswordError()
 	{
 		LoginPage login = new LoginPage(driver);

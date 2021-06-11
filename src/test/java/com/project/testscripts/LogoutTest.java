@@ -14,7 +14,7 @@ public class LogoutTest extends Base{
 	HomePage home;
 	LogoutPage logout;
 	
-	//@Test
+	@Test
 	public void verifyprofile() {
 	LoginPage login = new LoginPage(driver);
 	LogoutPage logout = new LogoutPage(driver);
@@ -24,14 +24,14 @@ public class LogoutTest extends Base{
 	HomePage home = new HomePage(driver);
 	home=login.clickonLoginButton();
 	home.clickonApplicationTour();
-	home.clickonUseracoount();
+	home.clickonUseraccount();
 	String actualprofileText= logout.getProfileText();
 	String expectedText="Profile";
 	Assert.assertEquals(actualprofileText, expectedText,"Profile button is missing");
 	
 	}
 	
-	//@Test
+	@Test
 	public void verifySignout() {
 		LoginPage login = new LoginPage(driver);
 		LogoutPage logout = new LogoutPage(driver);
@@ -40,7 +40,7 @@ public class LogoutTest extends Base{
 		login.clickonRemember();
 		home=login.clickonLoginButton();
 		home.clickonApplicationTour();
-		home.clickonUseracoount();
+		home.clickonUseraccount();
 		String actualSignoutText=logout.getSignoutText();
 		String expectedSignoutText="Sign Out";
 		Assert.assertEquals(actualSignoutText, expectedSignoutText, "Signout Button is missing");

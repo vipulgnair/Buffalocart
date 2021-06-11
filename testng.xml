@@ -3,15 +3,16 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
       <parameter name="url" value ="https://buffalocart.com/demo/billing/public/login"/>
-      <parameter name = "browser" value = "chrome"/>
+      <parameter name = "browser" value = "firefox"/>
     <classes>
-      <class name="com.project.core.Base"/>
-      <class name="com.project.testscripts.LoginTest"/>
-      <class name="com.project.testscripts.LogoutTest"/>
-      <class name="com.project.testscripts.ResetPasswordTest"/>
-      <class name="com.project.testscripts.HomeTest"/>
-      <class name="com.project.testscripts.UserManagementTest"/>
-      <class name="com.project.testscripts.UsersTest"/>
+    <class name="com.project.core.Base"/>
+    <class name="com.project.testscripts.LoginTest"/>
+    <class name="com.project.testscripts.LogoutTest"/>
+    <class name="com.project.testscripts.HomeTest"/>
+    <class name="com.project.testscripts.ResetPasswordTest"/>
+	<class name="com.project.testscripts.UserManagementTest"/>
+    <class name="com.project.testscripts.UsersTest"/>
+    <class name="com.project.testscripts.SalesCommissionAgentTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

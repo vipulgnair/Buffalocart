@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results skipped="0" failed="8" ignored="0" total="19" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-03T23:35:08 IST" name="Suite" finished-at="2021-06-03T23:36:59 IST" duration-ms="111285">
+  <suite name="Suite" duration-ms="581680" started-at="2021-06-11T18:43:22 IST" finished-at="2021-06-11T18:53:03 IST">
     <groups>
     </groups>
-    <test started-at="2021-06-03T23:35:08 IST" name="Test" finished-at="2021-06-03T23:36:59 IST" duration-ms="111285">
+    <test name="Test" duration-ms="581680" started-at="2021-06-11T18:43:22 IST" finished-at="2021-06-11T18:53:03 IST">
       <class name="com.project.testscripts.UserManagementTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.project.testscripts.UserManagementTest@4ac3c60d]" started-at="2021-06-03T23:35:08 IST" name="setUp" finished-at="2021-06-03T23:35:19 IST" duration-ms="11313" status="PASS">
+        <test-method status="PASS" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.project.testscripts.UserManagementTest@6043cd28]" name="setUp" is-config="true" duration-ms="15270" started-at="2021-06-11T18:46:51 IST" finished-at="2021-06-11T18:47:07 IST">
           <params>
             <param index="0">
               <value>
@@ -16,31 +16,60 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyUsersTabloaded()[pri:0, instance:com.project.testscripts.UserManagementTest@4ac3c60d]" started-at="2021-06-03T23:35:19 IST" name="verifyUsersTabloaded" finished-at="2021-06-03T23:35:34 IST" duration-ms="14513" status="PASS">
+        <test-method status="PASS" signature="VerifyUserManagementTab()[pri:0, instance:com.project.testscripts.UserManagementTest@6043cd28]" name="VerifyUserManagementTab" duration-ms="19808" started-at="2021-06-11T18:47:07 IST" finished-at="2021-06-11T18:47:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyUserManagementTab -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.project.testscripts.UserManagementTest@6043cd28]" name="tearDown" is-config="true" duration-ms="2371" started-at="2021-06-11T18:47:27 IST" finished-at="2021-06-11T18:47:29 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyUserManagementTab status=SUCCESS method=UserManagementTest.VerifyUserManagementTab()[pri:0, instance:com.project.testscripts.UserManagementTest@6043cd28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.project.testscripts.UserManagementTest@6043cd28]" name="setUp" is-config="true" duration-ms="12126" started-at="2021-06-11T18:47:29 IST" finished-at="2021-06-11T18:47:41 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://buffalocart.com/demo/billing/public/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUsersTabloaded()[pri:0, instance:com.project.testscripts.UserManagementTest@6043cd28]" name="verifyUsersTabloaded" duration-ms="16854" started-at="2021-06-11T18:47:41 IST" finished-at="2021-06-11T18:47:58 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUsersTabloaded -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.project.testscripts.UserManagementTest@4ac3c60d]" started-at="2021-06-03T23:35:34 IST" name="tearDown" finished-at="2021-06-03T23:35:38 IST" duration-ms="4157" status="PASS">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.project.testscripts.UserManagementTest@6043cd28]" name="tearDown" is-config="true" duration-ms="3283" started-at="2021-06-11T18:47:58 IST" finished-at="2021-06-11T18:48:01 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUsersTabloaded status=SUCCESS method=UserManagementTest.verifyUsersTabloaded()[pri:0, instance:com.project.testscripts.UserManagementTest@4ac3c60d] output={null}]]]>
+                <![CDATA[[TestResult name=verifyUsersTabloaded status=SUCCESS method=UserManagementTest.verifyUsersTabloaded()[pri:0, instance:com.project.testscripts.UserManagementTest@6043cd28] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.project.testscripts.UserManagementTest -->
-      <class name="com.project.testscripts.UsersTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.project.testscripts.UsersTest@4facf68f]" started-at="2021-06-03T23:35:38 IST" name="setUp" finished-at="2021-06-03T23:35:49 IST" duration-ms="11159" status="PASS">
+        <test-method status="PASS" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.project.testscripts.UserManagementTest@6043cd28]" name="setUp" is-config="true" duration-ms="12547" started-at="2021-06-11T18:48:01 IST" finished-at="2021-06-11T18:48:14 IST">
           <params>
             <param index="0">
               <value>
@@ -49,62 +78,29 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="AddList()[pri:0, instance:com.project.testscripts.UsersTest@4facf68f]" started-at="2021-06-03T23:35:49 IST" name="AddList" finished-at="2021-06-03T23:36:07 IST" duration-ms="17837" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddList -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.project.testscripts.UsersTest@4facf68f]" started-at="2021-06-03T23:36:07 IST" name="tearDown" finished-at="2021-06-03T23:36:07 IST" duration-ms="518" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=AddList status=SUCCESS method=UsersTest.AddList()[pri:0, instance:com.project.testscripts.UsersTest@4facf68f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.project.testscripts.UsersTest@4facf68f]" started-at="2021-06-03T23:36:07 IST" name="setUp" finished-at="2021-06-03T23:36:18 IST" duration-ms="10334" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://buffalocart.com/demo/billing/public/login]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyTableRow()[pri:0, instance:com.project.testscripts.UsersTest@4facf68f]" started-at="2021-06-03T23:36:18 IST" name="verifyTableRow" finished-at="2021-06-03T23:36:32 IST" duration-ms="14565" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="verifyusermanagementloaded()[pri:0, instance:com.project.testscripts.UserManagementTest@6043cd28]" name="verifyusermanagementloaded" duration-ms="28184" started-at="2021-06-11T18:48:14 IST" finished-at="2021-06-11T18:48:42 IST">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Mismatch List!!!: lists don't have the same size expected [4] but found [14]]]>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //li[contains(@class,'treeview active')]' (tried for 15 second(s) with 500 milliseconds interval)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Mismatch List!!!: lists don't have the same size expected [4] but found [14]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:907)
-at org.testng.Assert.assertEquals(Assert.java:1089)
-at com.project.testscripts.UsersTest.verifyTableRow(UsersTest.java:77)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //li[contains(@class,'treeview active')]' (tried for 15 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at com.project.utiities.PageUtility.waitForElementTobeVisible(PageUtility.java:16)
+at com.project.pages.UserManagementPage.getUserManagementStatus(UserManagementPage.java:69)
+at com.project.testscripts.UserManagementTest.verifyusermanagementloaded(UserManagementTest.java:35)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -113,7 +109,144 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //li[contains(@class,'treeview active')]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-75SCK3T', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 9296, moz:profile: C:\Users\TEMP.DESKTOP-75SCK..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9c145dc7-2a95-4d64-b666-0acbedc6dcb8
+*** Element info: {Using=xpath, value=//li[contains(@class,'treeview active')]}
+at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyusermanagementloaded -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.project.testscripts.UserManagementTest@6043cd28]" name="tearDown" is-config="true" duration-ms="2053" started-at="2021-06-11T18:48:42 IST" finished-at="2021-06-11T18:48:44 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyusermanagementloaded status=FAILURE method=UserManagementTest.verifyusermanagementloaded()[pri:0, instance:com.project.testscripts.UserManagementTest@6043cd28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.project.testscripts.UserManagementTest -->
+      <class name="com.project.testscripts.SalesCommissionAgentTest">
+        <test-method status="PASS" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.project.testscripts.SalesCommissionAgentTest@59906517]" name="setUp" is-config="true" duration-ms="12686" started-at="2021-06-11T18:51:06 IST" finished-at="2021-06-11T18:51:19 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://buffalocart.com/demo/billing/public/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="addAgent()[pri:0, instance:com.project.testscripts.SalesCommissionAgentTest@59906517]" name="addAgent" duration-ms="23747" started-at="2021-06-11T18:51:19 IST" finished-at="2021-06-11T18:51:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAgent -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.project.testscripts.SalesCommissionAgentTest@59906517]" name="tearDown" is-config="true" duration-ms="3329" started-at="2021-06-11T18:51:42 IST" finished-at="2021-06-11T18:51:46 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addAgent status=SUCCESS method=SalesCommissionAgentTest.addAgent()[pri:0, instance:com.project.testscripts.SalesCommissionAgentTest@59906517] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.project.testscripts.SalesCommissionAgentTest@59906517]" name="setUp" is-config="true" duration-ms="14054" started-at="2021-06-11T18:51:46 IST" finished-at="2021-06-11T18:52:00 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://buffalocart.com/demo/billing/public/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifySalesCommissionAgentTitle()[pri:0, instance:com.project.testscripts.SalesCommissionAgentTest@59906517]" name="verifySalesCommissionAgentTitle" duration-ms="16753" started-at="2021-06-11T18:52:00 IST" finished-at="2021-06-11T18:52:16 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Title Mismatch expected [Sales Commission Agents - Demo Company] but found [Sales Commission Agents - Reobeen LLC]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Title Mismatch expected [Sales Commission Agents - Demo Company] but found [Sales Commission Agents - Reobeen LLC]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at com.project.testscripts.SalesCommissionAgentTest.verifySalesCommissionAgentTitle(SalesCommissionAgentTest.java:33)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
@@ -134,19 +267,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTableRow -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.project.testscripts.UsersTest@4facf68f]" started-at="2021-06-03T23:36:32 IST" name="tearDown" finished-at="2021-06-03T23:36:33 IST" duration-ms="652" status="PASS">
+        </test-method> <!-- verifySalesCommissionAgentTitle -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.project.testscripts.SalesCommissionAgentTest@59906517]" name="tearDown" is-config="true" duration-ms="3498" started-at="2021-06-11T18:52:16 IST" finished-at="2021-06-11T18:52:20 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyTableRow status=FAILURE method=UsersTest.verifyTableRow()[pri:0, instance:com.project.testscripts.UsersTest@4facf68f] output={null}]]]>
+                <![CDATA[[TestResult name=verifySalesCommissionAgentTitle status=FAILURE method=SalesCommissionAgentTest.verifySalesCommissionAgentTitle()[pri:0, instance:com.project.testscripts.SalesCommissionAgentTest@59906517] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.project.testscripts.UsersTest@4facf68f]" started-at="2021-06-03T23:36:33 IST" name="setUp" finished-at="2021-06-03T23:36:45 IST" duration-ms="11705" status="PASS">
+        <test-method status="PASS" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.project.testscripts.SalesCommissionAgentTest@59906517]" name="setUp" is-config="true" duration-ms="13113" started-at="2021-06-11T18:52:20 IST" finished-at="2021-06-11T18:52:33 IST">
           <params>
             <param index="0">
               <value>
@@ -155,22 +288,712 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </param>
             <param index="1">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyusersTitle()[pri:0, instance:com.project.testscripts.UsersTest@4facf68f]" started-at="2021-06-03T23:36:45 IST" name="verifyusersTitle" finished-at="2021-06-03T23:36:59 IST" duration-ms="14291" status="PASS">
+        <test-method status="FAIL" signature="verifysearch()[pri:0, instance:com.project.testscripts.SalesCommissionAgentTest@59906517]" name="verifysearch" duration-ms="27175" started-at="2021-06-11T18:52:33 IST" finished-at="2021-06-11T18:53:00 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [agent123@gmail.com] but found [Mr agent 123]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [agent123@gmail.com] but found [Mr agent 123]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.project.testscripts.SalesCommissionAgentTest.verifysearch(SalesCommissionAgentTest.java:77)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyusersTitle -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.project.testscripts.UsersTest@4facf68f]" started-at="2021-06-03T23:36:59 IST" name="tearDown" finished-at="2021-06-03T23:36:59 IST" duration-ms="156" status="PASS">
+        </test-method> <!-- verifysearch -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.project.testscripts.SalesCommissionAgentTest@59906517]" name="tearDown" is-config="true" duration-ms="3090" started-at="2021-06-11T18:53:00 IST" finished-at="2021-06-11T18:53:03 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyusersTitle status=SUCCESS method=UsersTest.verifyusersTitle()[pri:0, instance:com.project.testscripts.UsersTest@4facf68f] output={null}]]]>
+                <![CDATA[[TestResult name=verifysearch status=FAILURE method=SalesCommissionAgentTest.verifysearch()[pri:0, instance:com.project.testscripts.SalesCommissionAgentTest@59906517] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.project.testscripts.SalesCommissionAgentTest -->
+      <class name="com.project.testscripts.ResetPasswordTest">
+        <test-method status="PASS" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.project.testscripts.ResetPasswordTest@42d8062c]" name="setUp" is-config="true" duration-ms="14819" started-at="2021-06-11T18:46:09 IST" finished-at="2021-06-11T18:46:23 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://buffalocart.com/demo/billing/public/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyForgotPasswordError()[pri:0, instance:com.project.testscripts.ResetPasswordTest@42d8062c]" name="verifyForgotPasswordError" duration-ms="3985" started-at="2021-06-11T18:46:23 IST" finished-at="2021-06-11T18:46:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyForgotPasswordError -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.project.testscripts.ResetPasswordTest@42d8062c]" name="tearDown" is-config="true" duration-ms="2838" started-at="2021-06-11T18:46:27 IST" finished-at="2021-06-11T18:46:30 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyForgotPasswordError status=SUCCESS method=ResetPasswordTest.verifyForgotPasswordError()[pri:0, instance:com.project.testscripts.ResetPasswordTest@42d8062c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.project.testscripts.ResetPasswordTest@42d8062c]" name="setUp" is-config="true" duration-ms="14665" started-at="2021-06-11T18:46:30 IST" finished-at="2021-06-11T18:46:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://buffalocart.com/demo/billing/public/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyResetPageLoadedorNot()[pri:0, instance:com.project.testscripts.ResetPasswordTest@42d8062c]" name="verifyResetPageLoadedorNot" duration-ms="1765" started-at="2021-06-11T18:46:45 IST" finished-at="2021-06-11T18:46:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyResetPageLoadedorNot -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.project.testscripts.ResetPasswordTest@42d8062c]" name="tearDown" is-config="true" duration-ms="4786" started-at="2021-06-11T18:46:47 IST" finished-at="2021-06-11T18:46:51 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyResetPageLoadedorNot status=SUCCESS method=ResetPasswordTest.verifyResetPageLoadedorNot()[pri:0, instance:com.project.testscripts.ResetPasswordTest@42d8062c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.project.testscripts.ResetPasswordTest -->
+      <class name="com.project.testscripts.HomeTest">
+        <test-method status="PASS" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.project.testscripts.HomeTest@7113b13f]" name="setUp" is-config="true" duration-ms="14262" started-at="2021-06-11T18:45:17 IST" finished-at="2021-06-11T18:45:31 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://buffalocart.com/demo/billing/public/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyHomePageTitle()[pri:0, instance:com.project.testscripts.HomeTest@7113b13f]" name="verifyHomePageTitle" duration-ms="7489" started-at="2021-06-11T18:45:31 IST" finished-at="2021-06-11T18:45:38 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Title Mismatch!! expected [Home - Demo Company] but found [Home - Reobeen LLC]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Title Mismatch!! expected [Home - Demo Company] but found [Home - Reobeen LLC]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at com.project.testscripts.HomeTest.verifyHomePageTitle(HomeTest.java:29)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitle -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.project.testscripts.HomeTest@7113b13f]" name="tearDown" is-config="true" duration-ms="3775" started-at="2021-06-11T18:45:38 IST" finished-at="2021-06-11T18:45:42 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHomePageTitle status=FAILURE method=HomeTest.verifyHomePageTitle()[pri:0, instance:com.project.testscripts.HomeTest@7113b13f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.project.testscripts.HomeTest@7113b13f]" name="setUp" is-config="true" duration-ms="16339" started-at="2021-06-11T18:45:42 IST" finished-at="2021-06-11T18:45:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://buffalocart.com/demo/billing/public/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyHomepageloaded()[pri:0, instance:com.project.testscripts.HomeTest@7113b13f]" name="verifyHomepageloaded" duration-ms="7395" started-at="2021-06-11T18:45:59 IST" finished-at="2021-06-11T18:46:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomepageloaded -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.project.testscripts.HomeTest@7113b13f]" name="tearDown" is-config="true" duration-ms="2701" started-at="2021-06-11T18:46:06 IST" finished-at="2021-06-11T18:46:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHomepageloaded status=SUCCESS method=HomeTest.verifyHomepageloaded()[pri:0, instance:com.project.testscripts.HomeTest@7113b13f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.project.testscripts.HomeTest -->
+      <class name="com.project.testscripts.LoginTest">
+        <test-method status="PASS" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.project.testscripts.LoginTest@29b5cd00]" name="setUp" is-config="true" duration-ms="15653" started-at="2021-06-11T18:43:22 IST" finished-at="2021-06-11T18:43:37 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://buffalocart.com/demo/billing/public/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLoginPageLoadedorNot()[pri:0, instance:com.project.testscripts.LoginTest@29b5cd00]" name="verifyLoginPageLoadedorNot" duration-ms="329" started-at="2021-06-11T18:43:37 IST" finished-at="2021-06-11T18:43:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageLoadedorNot -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.project.testscripts.LoginTest@29b5cd00]" name="tearDown" is-config="true" duration-ms="3490" started-at="2021-06-11T18:43:38 IST" finished-at="2021-06-11T18:43:41 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginPageLoadedorNot status=SUCCESS method=LoginTest.verifyLoginPageLoadedorNot()[pri:0, instance:com.project.testscripts.LoginTest@29b5cd00] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.project.testscripts.LoginTest@29b5cd00]" name="setUp" is-config="true" duration-ms="15842" started-at="2021-06-11T18:43:41 IST" finished-at="2021-06-11T18:43:57 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://buffalocart.com/demo/billing/public/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLoginPageTitle()[pri:0, instance:com.project.testscripts.LoginTest@29b5cd00]" name="verifyLoginPageTitle" duration-ms="17" started-at="2021-06-11T18:43:57 IST" finished-at="2021-06-11T18:43:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTitle -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.project.testscripts.LoginTest@29b5cd00]" name="tearDown" is-config="true" duration-ms="2077" started-at="2021-06-11T18:43:57 IST" finished-at="2021-06-11T18:43:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginPageTitle status=SUCCESS method=LoginTest.verifyLoginPageTitle()[pri:0, instance:com.project.testscripts.LoginTest@29b5cd00] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.project.testscripts.LoginTest@29b5cd00]" name="setUp" is-config="true" duration-ms="13344" started-at="2021-06-11T18:43:59 IST" finished-at="2021-06-11T18:44:12 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://buffalocart.com/demo/billing/public/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyValidLogin()[pri:0, instance:com.project.testscripts.LoginTest@29b5cd00]" name="verifyValidLogin" duration-ms="11822" started-at="2021-06-11T18:44:12 IST" finished-at="2021-06-11T18:44:24 IST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.project.testscripts.LoginTest.verifyValidLogin(LoginTest.java:50)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidLogin -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.project.testscripts.LoginTest@29b5cd00]" name="tearDown" is-config="true" duration-ms="2638" started-at="2021-06-11T18:44:24 IST" finished-at="2021-06-11T18:44:27 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyValidLogin status=FAILURE method=LoginTest.verifyValidLogin()[pri:0, instance:com.project.testscripts.LoginTest@29b5cd00] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.project.testscripts.LoginTest -->
+      <class name="com.project.testscripts.LogoutTest">
+        <test-method status="PASS" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.project.testscripts.LogoutTest@60285225]" name="setUp" is-config="true" duration-ms="13297" started-at="2021-06-11T18:44:27 IST" finished-at="2021-06-11T18:44:40 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://buffalocart.com/demo/billing/public/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifySignout()[pri:0, instance:com.project.testscripts.LogoutTest@60285225]" name="verifySignout" duration-ms="9780" started-at="2021-06-11T18:44:40 IST" finished-at="2021-06-11T18:44:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignout -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.project.testscripts.LogoutTest@60285225]" name="tearDown" is-config="true" duration-ms="3604" started-at="2021-06-11T18:44:50 IST" finished-at="2021-06-11T18:44:54 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySignout status=SUCCESS method=LogoutTest.verifySignout()[pri:0, instance:com.project.testscripts.LogoutTest@60285225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.project.testscripts.LogoutTest@60285225]" name="setUp" is-config="true" duration-ms="12634" started-at="2021-06-11T18:44:54 IST" finished-at="2021-06-11T18:45:06 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://buffalocart.com/demo/billing/public/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyprofile()[pri:0, instance:com.project.testscripts.LogoutTest@60285225]" name="verifyprofile" duration-ms="7769" started-at="2021-06-11T18:45:06 IST" finished-at="2021-06-11T18:45:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyprofile -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.project.testscripts.LogoutTest@60285225]" name="tearDown" is-config="true" duration-ms="2642" started-at="2021-06-11T18:45:14 IST" finished-at="2021-06-11T18:45:17 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyprofile status=SUCCESS method=LogoutTest.verifyprofile()[pri:0, instance:com.project.testscripts.LogoutTest@60285225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.project.testscripts.LogoutTest -->
+      <class name="com.project.testscripts.UsersTest">
+        <test-method status="PASS" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.project.testscripts.UsersTest@cb51256]" name="setUp" is-config="true" duration-ms="17569" started-at="2021-06-11T18:48:44 IST" finished-at="2021-06-11T18:49:02 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://buffalocart.com/demo/billing/public/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="AddList()[pri:0, instance:com.project.testscripts.UsersTest@cb51256]" name="AddList" duration-ms="19213" started-at="2021-06-11T18:49:02 IST" finished-at="2021-06-11T18:49:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddList -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.project.testscripts.UsersTest@cb51256]" name="tearDown" is-config="true" duration-ms="3513" started-at="2021-06-11T18:49:21 IST" finished-at="2021-06-11T18:49:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddList status=SUCCESS method=UsersTest.AddList()[pri:0, instance:com.project.testscripts.UsersTest@cb51256] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.project.testscripts.UsersTest@cb51256]" name="setUp" is-config="true" duration-ms="14212" started-at="2021-06-11T18:49:24 IST" finished-at="2021-06-11T18:49:39 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://buffalocart.com/demo/billing/public/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyTableRow()[pri:0, instance:com.project.testscripts.UsersTest@cb51256]" name="verifyTableRow" duration-ms="15759" started-at="2021-06-11T18:49:39 IST" finished-at="2021-06-11T18:49:54 IST">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Tried to run command without establishing a connection
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-75SCK3T', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 14172, moz:profile: C:\Users\TEMP.DESKTOP-75SCK..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cc02990f-96f1-4cbf-8b0a-1ecd491c4b83
+*** Element info: {Using=xpath, value=//table[@id='users_table']//tbody//td}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-75SCK3T', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210527174632, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 14172, moz:profile: C:\Users\TEMP.DESKTOP-75SCK..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cc02990f-96f1-4cbf-8b0a-1ecd491c4b83
+*** Element info: {Using=xpath, value=//table[@id='users_table']//tbody//td}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)
+at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
+at org.openqa.selenium.support.pagefactory.ByChained.findElements(ByChained.java:69)
+at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:85)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:36)
+at com.sun.proxy.$Proxy12.size(Unknown Source)
+at com.project.pages.UsersPage.verifyTable(UsersPage.java:128)
+at com.project.testscripts.UsersTest.verifyTableRow(UsersTest.java:71)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTableRow -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.project.testscripts.UsersTest@cb51256]" name="tearDown" is-config="true" duration-ms="3509" started-at="2021-06-11T18:49:54 IST" finished-at="2021-06-11T18:49:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTableRow status=FAILURE method=UsersTest.verifyTableRow()[pri:0, instance:com.project.testscripts.UsersTest@cb51256] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.project.testscripts.UsersTest@cb51256]" name="setUp" is-config="true" duration-ms="13121" started-at="2021-06-11T18:49:58 IST" finished-at="2021-06-11T18:50:11 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://buffalocart.com/demo/billing/public/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyViewUserPageTitle()[pri:0, instance:com.project.testscripts.UsersTest@cb51256]" name="verifyViewUserPageTitle" duration-ms="18483" started-at="2021-06-11T18:50:11 IST" finished-at="2021-06-11T18:50:29 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Userview page title mismatch expected [View User - Demo Company] but found [View User - Reobeen LLC]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Userview page title mismatch expected [View User - Demo Company] but found [View User - Reobeen LLC]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at com.project.testscripts.UsersTest.verifyViewUserPageTitle(UsersTest.java:95)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyViewUserPageTitle -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.project.testscripts.UsersTest@cb51256]" name="tearDown" is-config="true" duration-ms="4331" started-at="2021-06-11T18:50:29 IST" finished-at="2021-06-11T18:50:34 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyViewUserPageTitle status=FAILURE method=UsersTest.verifyViewUserPageTitle()[pri:0, instance:com.project.testscripts.UsersTest@cb51256] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.project.testscripts.UsersTest@cb51256]" name="setUp" is-config="true" duration-ms="12740" started-at="2021-06-11T18:50:34 IST" finished-at="2021-06-11T18:50:46 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://buffalocart.com/demo/billing/public/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyusersTitle()[pri:0, instance:com.project.testscripts.UsersTest@cb51256]" name="verifyusersTitle" duration-ms="15993" started-at="2021-06-11T18:50:46 IST" finished-at="2021-06-11T18:51:02 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Title Mismatch expected [Users - Demo Company] but found [Users - Reobeen LLC]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Title Mismatch expected [Users - Demo Company] but found [Users - Reobeen LLC]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at com.project.testscripts.UsersTest.verifyusersTitle(UsersTest.java:36)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyusersTitle -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.project.testscripts.UsersTest@cb51256]" name="tearDown" is-config="true" duration-ms="3399" started-at="2021-06-11T18:51:02 IST" finished-at="2021-06-11T18:51:06 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyusersTitle status=FAILURE method=UsersTest.verifyusersTitle()[pri:0, instance:com.project.testscripts.UsersTest@cb51256] output={null}]]]>
               </value>
             </param>
           </params>

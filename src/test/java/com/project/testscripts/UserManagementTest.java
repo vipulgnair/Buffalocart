@@ -19,15 +19,15 @@ public class UserManagementTest extends Base {
 	LogoutPage logout;
 	UserManagementPage userManagement;
 	
-	//@Test
+	@Test
 	public void verifyusermanagementloaded() throws InterruptedException
 	{
-		LoginPage login = new LoginPage(driver);
-		LogoutPage logout = new LogoutPage(driver);
+		login = new LoginPage(driver);
+		//LogoutPage logout = new LogoutPage(driver);
 		login.enterUsername("admin");
 		login.enterPassword("123456");
 		login.clickonRemember();
-		HomePage home = new HomePage(driver);
+		//home = new HomePage(driver);
 		home=login.clickonLoginButton();
 		home.clickonApplicationTour();
 		userManagement =home.clickonusermanagement();
@@ -36,7 +36,7 @@ public class UserManagementTest extends Base {
 		Assert.assertTrue(result,"Usermanagement Page not expanded");
 	}
 	
-	//@Test
+	@Test
 	public void VerifyUserManagementTab() throws InterruptedException
 	{
 		LoginPage login = new LoginPage(driver);

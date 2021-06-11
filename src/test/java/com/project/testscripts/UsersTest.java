@@ -45,7 +45,7 @@ public class UsersTest extends Base {
 		home.clickonApplicationTour();
 		userManagement=home.clickonusermanagement();
 		userManagement.clickonUsersSubmenu("Users");
-	UsersPage users= new UsersPage(driver);
+	users= new UsersPage(driver);
 	users.addUser();
 	users.enterSurname("Mr");
 	users.enterFirstName("stud");
@@ -67,7 +67,7 @@ public class UsersTest extends Base {
 		home.clickonApplicationTour();;
 		userManagement=home.clickonusermanagement();
 		userManagement.clickonUsersSubmenu("Users");
-		UsersPage users= new UsersPage(driver);
+		//UsersPage users= new UsersPage(driver);
 	List<String> actualTableList=users.verifyTable();
 	List<String> expectedTableList=new ArrayList<String>();
 	expectedTableList.add("028");
@@ -76,6 +76,25 @@ public class UsersTest extends Base {
 	expectedTableList.add("stud123@gmail.com");
 	Assert.assertEquals(actualTableList, expectedTableList,"Mismatch List!!!");
 
+	}
+	
+	@Test
+	public void verifyViewUserPageTitle() throws InterruptedException
+	{
+		login=new LoginPage(driver);
+		login.enterUsername("admin");
+		login.enterPassword("123456");
+		home=login.clickonLoginButton();
+		home.clickonApplicationTour();
+		userManagement=home.clickonusermanagement();
+		userManagement.clickonUsersSubmenu("Users");
+		users= new UsersPage(driver);
+		users.clickUserview();
+		String actualViewUserTitle=driver.getTitle();
+		String expectedViewUserTitle="View User - Demo Company";
+		Assert.assertEquals(actualViewUserTitle, expectedViewUserTitle, "Userview page title mismatch");
+		
+		
 	}
 
 	
