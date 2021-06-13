@@ -1,5 +1,7 @@
 package com.project.testscripts;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -9,6 +11,7 @@ import com.project.pages.LoginPage;
 import com.project.pages.RolesPage;
 import com.project.pages.SalesCommissionAgentPage;
 import com.project.pages.UserManagementPage;
+import com.project.utiities.PageUtility;
 
 public class SalesCommissionAgentTest extends Base {
 	
@@ -18,27 +21,33 @@ public class SalesCommissionAgentTest extends Base {
 	SalesCommissionAgentPage salesCommAgentPage;
 	
 	@Test
-	public void verifySalesCommissionAgentTitle() throws InterruptedException
+	public void verifySalesCommissionAgentTitle() throws InterruptedException, IOException
 	{
 		login=new LoginPage(driver);
-		login.enterUsername("admin");
-		login.enterPassword("123456");
+		PageUtility util=new PageUtility();
+		String username = util.readdata(1, 0);
+		login.enterUsername(username);
+		String password=util.readdata(1, 1);
+		login.enterPassword(password);
 		login.clickonRemember();
 		home=login.clickonLoginButton();
 		home.clickonApplicationTour();
 		userManagement=home.clickonusermanagement();
 		userManagement.clickonUsersSubmenu("Sales Commission Agents");
 		String actualusersTitle=driver.getTitle();
-		String expectedusersTitle="Sales Commission Agents - Demo Company";
+		String expectedusersTitle="Sales Commission Agents - Reobeen LLC";
 		Assert.assertEquals(actualusersTitle, expectedusersTitle,"Title Mismatch");
 		}
 	
 	@Test
-	public void addAgent() throws InterruptedException
+	public void addAgent() throws InterruptedException, IOException
 	{
 		login=new LoginPage(driver);
-		login.enterUsername("admin");
-		login.enterPassword("123456");
+		PageUtility util=new PageUtility();
+		String username = util.readdata(1, 0);
+		login.enterUsername(username);
+		String password=util.readdata(1, 1);
+		login.enterPassword(password);
 		login.clickonRemember();
 		home=login.clickonLoginButton();
 		home.clickonApplicationTour();
@@ -59,11 +68,14 @@ public class SalesCommissionAgentTest extends Base {
 	}
 	
 	@Test
-	public void verifysearch() throws InterruptedException
+	public void verifysearch() throws InterruptedException, IOException
 	{
 		login=new LoginPage(driver);
-		login.enterUsername("admin");
-		login.enterPassword("123456");
+		PageUtility util=new PageUtility();
+		String username = util.readdata(1, 0);
+		login.enterUsername(username);
+		String password=util.readdata(1, 1);
+		login.enterPassword(password);
 		login.clickonRemember();
 		home=login.clickonLoginButton();
 		home.clickonApplicationTour();

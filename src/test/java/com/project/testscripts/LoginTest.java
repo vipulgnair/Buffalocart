@@ -1,5 +1,7 @@
 package com.project.testscripts;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -7,6 +9,7 @@ import org.testng.annotations.Test;
 import com.project.core.Base;
 import com.project.pages.LoginPage;
 import com.project.pages.LogoutPage;
+import com.project.utiities.PageUtility;
 import com.project.pages.HomePage;
 
 public class LoginTest extends Base{
@@ -32,11 +35,15 @@ public class LoginTest extends Base{
 	}
 	
 	@Test
-	public void verifyValidLogin()
+	public void verifyValidLogin() throws IOException
 	{
 		login = new LoginPage(driver);
-		login.enterUsername("admin");
-		login.enterPassword("123456");
+		
+		PageUtility util=new PageUtility();
+		String username = util.readdata(1, 0);
+		login.enterUsername(username);
+		String password=util.readdata(1, 1);
+		login.enterPassword(password);
 		login.clickonRemember();
 		home=login.clickonLoginButton();
 		home.clickonApplicationTour();
@@ -46,8 +53,8 @@ public class LoginTest extends Base{
 		//String actualUserID = home.getPageName();
 		//String expectedUserID = "Demo Company";
 		//Assert.assertEquals(actualUserID, expectedUserID,":User account page not loaded");
-		home.clickonUseraccount();
-		logout.clickonLogoutButton();
+		//home.clickonUseraccount();
+		//logout.clickonLogoutButton();
 	}
 	
 

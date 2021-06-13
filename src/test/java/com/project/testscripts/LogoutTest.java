@@ -1,5 +1,7 @@
 package com.project.testscripts;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -7,6 +9,7 @@ import com.project.core.Base;
 import com.project.pages.HomePage;
 import com.project.pages.LoginPage;
 import com.project.pages.LogoutPage;
+import com.project.utiities.PageUtility;
 
 public class LogoutTest extends Base{
 	
@@ -15,11 +18,14 @@ public class LogoutTest extends Base{
 	LogoutPage logout;
 	
 	@Test
-	public void verifyprofile() {
+	public void verifyprofile() throws IOException {
 	LoginPage login = new LoginPage(driver);
 	LogoutPage logout = new LogoutPage(driver);
-	login.enterUsername("admin");
-	login.enterPassword("123456");
+	PageUtility util=new PageUtility();
+	String username = util.readdata(1, 0);
+	login.enterUsername(username);
+	String password=util.readdata(1, 1);
+	login.enterPassword(password);
 	login.clickonRemember();
 	HomePage home = new HomePage(driver);
 	home=login.clickonLoginButton();
@@ -32,11 +38,14 @@ public class LogoutTest extends Base{
 	}
 	
 	@Test
-	public void verifySignout() {
+	public void verifySignout() throws IOException {
 		LoginPage login = new LoginPage(driver);
 		LogoutPage logout = new LogoutPage(driver);
-		login.enterUsername("admin");
-		login.enterPassword("123456");
+		PageUtility util=new PageUtility();
+		String username = util.readdata(1, 0);
+		login.enterUsername(username);
+		String password=util.readdata(1, 1);
+		login.enterPassword(password);
 		login.clickonRemember();
 		home=login.clickonLoginButton();
 		home.clickonApplicationTour();

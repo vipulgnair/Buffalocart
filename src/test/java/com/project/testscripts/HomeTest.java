@@ -1,5 +1,7 @@
 package com.project.testscripts;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -8,6 +10,7 @@ import com.project.pages.HomePage;
 import com.project.pages.LoginPage;
 import com.project.pages.LogoutPage;
 import com.project.pages.UserManagementPage;
+import com.project.utiities.PageUtility;
 
 public class HomeTest extends Base{
 	HomePage home;
@@ -16,25 +19,31 @@ public class HomeTest extends Base{
 	UserManagementPage userManagement;
 	
 	@Test
-	public void verifyHomePageTitle()
+	public void verifyHomePageTitle() throws IOException
 	{
 		login=new LoginPage(driver);
-		login.enterUsername("admin");
-		login.enterPassword("123456");
+		PageUtility util=new PageUtility();
+		String username = util.readdata(1, 0);
+		login.enterUsername(username);
+		String password=util.readdata(1, 1);
+		login.enterPassword(password);
 		login.clickonRemember();
 		home=login.clickonLoginButton();
 		home.clickonApplicationTour();
 		String actualHomePageTitle=driver.getTitle();
-		String expectedHomePageTilte="Home - Demo Company";
+		String expectedHomePageTilte="Home - Reobeen LLC";
 		Assert.assertEquals(actualHomePageTitle, expectedHomePageTilte,"Title Mismatch!!");
 		
 	}
 	@Test(enabled=true)
-	public void verifyHomepageloaded() throws InterruptedException {
+	public void verifyHomepageloaded() throws InterruptedException, IOException {
 		login = new LoginPage(driver);
 		//LogoutPage logout = new LogoutPage(driver);
-		login.enterUsername("admin");
-		login.enterPassword("123456");
+		PageUtility util=new PageUtility();
+		String username = util.readdata(1, 0);
+		login.enterUsername(username);
+		String password=util.readdata(1, 1);
+		login.enterPassword(password);
 		login.clickonRemember();
 		home=login.clickonLoginButton();
 		home.clickonApplicationTour();

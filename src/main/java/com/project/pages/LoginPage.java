@@ -1,5 +1,7 @@
 package com.project.pages;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -39,8 +41,11 @@ public class LoginPage extends PageUtility{
 		return getElementDisplayedStatus(loginPage);
 	}
 	
-	public void enterUsername(String uname)
+	
+	
+	public void enterUsername(String uname) throws IOException
 	{
+		
 		enterText(userName,uname);
 		
 	}

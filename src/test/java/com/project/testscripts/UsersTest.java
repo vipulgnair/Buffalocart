@@ -1,5 +1,6 @@
 package com.project.testscripts;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,6 +13,7 @@ import com.project.pages.LoginPage;
 import com.project.pages.LogoutPage;
 import com.project.pages.UserManagementPage;
 import com.project.pages.UsersPage;
+import com.project.utiities.PageUtility;
 
 public class UsersTest extends Base {
 	
@@ -22,25 +24,31 @@ public class UsersTest extends Base {
 	UsersPage users;
 	
 	@Test
-	public void verifyusersTitle() throws InterruptedException
+	public void verifyusersTitle() throws InterruptedException, IOException
 	{
 	login=new LoginPage(driver);
-	login.enterUsername("admin");
-	login.enterPassword("123456");
+	PageUtility util=new PageUtility();
+	String username = util.readdata(1, 0);
+	login.enterUsername(username);
+	String password=util.readdata(1, 1);
+	login.enterPassword(password);
 	home=login.clickonLoginButton();
 	home.clickonApplicationTour();
 	userManagement=home.clickonusermanagement();
 	userManagement.clickonUsersSubmenu("Users");
 	String actualusersTitle=driver.getTitle();
-	String expectedusersTitle="Users - Demo Company";
+	String expectedusersTitle="Users - Reobeen LLC";
 	Assert.assertEquals(actualusersTitle, expectedusersTitle,"Title Mismatch");
 	}
 	@Test
-	public void AddList() throws InterruptedException
+	public void AddList() throws InterruptedException, IOException
 	{
 		login=new LoginPage(driver);
-		login.enterUsername("admin");
-		login.enterPassword("123456");
+		PageUtility util=new PageUtility();
+		String username = util.readdata(1, 0);
+		login.enterUsername(username);
+		String password=util.readdata(1, 1);
+		login.enterPassword(password);
 		home=login.clickonLoginButton();
 		home.clickonApplicationTour();
 		userManagement=home.clickonusermanagement();
@@ -58,11 +66,14 @@ public class UsersTest extends Base {
 	users.clickSave();
 	}
 	@Test
-	public void verifyTableRow() throws InterruptedException
+	public void verifyTableRow() throws InterruptedException, IOException
 	{
 		login=new LoginPage(driver);
-		login.enterUsername("admin");
-		login.enterPassword("123456");
+		PageUtility util=new PageUtility();
+		String username = util.readdata(1, 0);
+		login.enterUsername(username);
+		String password=util.readdata(1, 1);
+		login.enterPassword(password);
 		home=login.clickonLoginButton();
 		home.clickonApplicationTour();;
 		userManagement=home.clickonusermanagement();
@@ -79,11 +90,14 @@ public class UsersTest extends Base {
 	}
 	
 	@Test
-	public void verifyViewUserPageTitle() throws InterruptedException
+	public void verifyViewUserPageTitle() throws InterruptedException, IOException
 	{
 		login=new LoginPage(driver);
-		login.enterUsername("admin");
-		login.enterPassword("123456");
+		PageUtility util=new PageUtility();
+		String username = util.readdata(1, 0);
+		login.enterUsername(username);
+		String password=util.readdata(1, 1);
+		login.enterPassword(password);
 		home=login.clickonLoginButton();
 		home.clickonApplicationTour();
 		userManagement=home.clickonusermanagement();
@@ -91,7 +105,7 @@ public class UsersTest extends Base {
 		users= new UsersPage(driver);
 		users.clickUserview();
 		String actualViewUserTitle=driver.getTitle();
-		String expectedViewUserTitle="View User - Demo Company";
+		String expectedViewUserTitle="View User - Reobeen LLC";
 		Assert.assertEquals(actualViewUserTitle, expectedViewUserTitle, "Userview page title mismatch");
 		
 		

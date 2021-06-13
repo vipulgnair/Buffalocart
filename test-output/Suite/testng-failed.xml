@@ -1,27 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="firefox"/>
     <parameter name="url" value="https://buffalocart.com/demo/billing/public/login"/>
     <classes>
-      <class name="com.project.testscripts.UserManagementTest">
-        <methods>
-          <include name="verifyusermanagementloaded"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.project.testscripts.UserManagementTest -->
-      <class name="com.project.testscripts.HomeTest">
-        <methods>
-          <include name="verifyHomePageTitle"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.project.testscripts.HomeTest -->
       <class name="com.project.testscripts.SalesCommissionAgentTest">
         <methods>
-          <include name="verifysearch"/>
           <include name="verifySalesCommissionAgentTitle"/>
           <include name="setUp"/>
           <include name="tearDown"/>
@@ -36,13 +21,13 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.project.testscripts.UsersTest -->
-      <class name="com.project.testscripts.LoginTest">
+      <class name="com.project.testscripts.UserManagementTest">
         <methods>
-          <include name="verifyValidLogin"/>
+          <include name="verifyusermanagementloaded"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.project.testscripts.LoginTest -->
+      </class> <!-- com.project.testscripts.UserManagementTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

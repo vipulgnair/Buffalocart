@@ -1,5 +1,7 @@
 package com.project.testscripts;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -9,6 +11,7 @@ import com.project.pages.LoginPage;
 import com.project.pages.LogoutPage;
 import com.project.pages.RolesPage;
 import com.project.pages.UserManagementPage;
+import com.project.utiities.PageUtility;
 
 public class RolesTest extends Base{
 	
@@ -21,27 +24,33 @@ public class RolesTest extends Base{
 	
 	
 	@Test
-	public void verifyRoleTitle() throws InterruptedException
+	public void verifyRoleTitle() throws InterruptedException, IOException
 	{
 		login=new LoginPage(driver);
-		login.enterUsername("admin");
-		login.enterPassword("123456");
+		PageUtility util=new PageUtility();
+		String username = util.readdata(1, 0);
+		login.enterUsername(username);
+		String password=util.readdata(1, 1);
+		login.enterPassword(password);
 		home=login.clickonLoginButton();
 		home.clickonApplicationTour();
 		userManagement=home.clickonusermanagement();
 		userManagement.clickonUsersSubmenu("Roles");
 		String actualusersTitle=driver.getTitle();
-		String expectedusersTitle="Roles - Demo Company";
+		String expectedusersTitle="Roles - Roebeen LLC";
 		Assert.assertEquals(actualusersTitle, expectedusersTitle,"Title Mismatch");
 	}
 	
 	
 	@Test
-	public void verifyAddRoles() throws InterruptedException
+	public void verifyAddRoles() throws InterruptedException, IOException
 	{
 		login=new LoginPage(driver);
-		login.enterUsername("admin");
-		login.enterPassword("123456");
+		PageUtility util=new PageUtility();
+		String username = util.readdata(1, 0);
+		login.enterUsername(username);
+		String password=util.readdata(1, 1);
+		login.enterPassword(password);
 		home=login.clickonLoginButton();
 		home.clickonApplicationTour();
 		userManagement=home.clickonusermanagement();
@@ -56,14 +65,18 @@ public class RolesTest extends Base{
 		roles.clickOnSaveButton();
 		
 		
+		
 	}
 	
 	@Test
-	public void verifysearch() throws InterruptedException
+	public void verifysearch() throws InterruptedException, IOException
 	{
 		login=new LoginPage(driver);
-		login.enterUsername("admin");
-		login.enterPassword("123456");
+		PageUtility util=new PageUtility();
+		String username = util.readdata(1, 0);
+		login.enterUsername(username);
+		String password=util.readdata(1, 1);
+		login.enterPassword(password);
 		home=login.clickonLoginButton();
 		home.clickonApplicationTour();
 		userManagement=home.clickonusermanagement();

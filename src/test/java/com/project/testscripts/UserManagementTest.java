@@ -1,6 +1,7 @@
 package com.project.testscripts;
 
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,7 +21,7 @@ public class UserManagementTest extends Base {
 	UserManagementPage userManagement;
 	
 	@Test
-	public void verifyusermanagementloaded() throws InterruptedException
+	public void verifyusermanagementloaded() throws InterruptedException, IOException
 	{
 		login = new LoginPage(driver);
 		//LogoutPage logout = new LogoutPage(driver);
@@ -37,7 +38,7 @@ public class UserManagementTest extends Base {
 	}
 	
 	@Test
-	public void VerifyUserManagementTab() throws InterruptedException
+	public void VerifyUserManagementSubMenus() throws InterruptedException, IOException
 	{
 		LoginPage login = new LoginPage(driver);
 		LogoutPage logout = new LogoutPage(driver);
@@ -58,7 +59,7 @@ public class UserManagementTest extends Base {
 	}
 	
 	@Test
-	public void verifyUsersTabloaded() throws InterruptedException
+	public void verifyUsersTabloaded() throws InterruptedException, IOException
 	{
 		LoginPage login = new LoginPage(driver);
 		LogoutPage logout = new LogoutPage(driver);
